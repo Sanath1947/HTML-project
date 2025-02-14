@@ -9,7 +9,7 @@ pipeline {
         }
         stage ('deployement') {
             steps {
-                # copy code from jenkins to webserver
+                # copy code from jenkins 
                 sh ' cp -r /var/lib/jenkins/workspace/pipeline/* /var/www/html '
             }
         }
